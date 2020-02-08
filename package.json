@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf ./public",
-    "copy": "cp -r ./src/static ./public/static",
+    "copy": "cp -r ./static ./public/static",
     "build": "NODE_ENV=production && npm run clean && mkdir -p ./public && npm run copy && parcel build src/index.html -d ./public",
     "start": "npm run clean && mkdir -p ./public && npm run copy && parcel src/index.html -d ./public"
   },

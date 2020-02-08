@@ -4,7 +4,7 @@ import { initDebug } from "./debug";
 import { initAudio } from "./audio";
 import { addPlane, addTetrahedrons } from "./objects";
 import { animate } from "./animate";
-import { btn, overlay, btnWrapper } from "./selectors";
+import { btn, overlay, btnWrapper, links } from "./selectors";
 
 async function start() {
   const { scene, renderer, camera, controls } = setup();
@@ -20,6 +20,7 @@ async function start() {
   btn.addEventListener("click", () => {
     overlay.classList.add("active");
     btnWrapper.classList.add("hidden");
+    links.classList.remove("hidden");
 
     audio.play();
 
