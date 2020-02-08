@@ -1,0 +1,24 @@
+{
+  "name": "three-js-dancing-napkin",
+  "version": "1.0.0",
+  "description": "A Three.js experiment — The dancing napkin",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf ./public",
+    "copy": "cp -r ./src/static ./public/static",
+    "build": "NODE_ENV=production && npm run clean && mkdir -p ./public && npm run copy && parcel build src/index.html -d ./public",
+    "start": "npm run clean && mkdir -p ./public && npm run copy && parcel src/index.html -d ./public"
+  },
+  "author": "Tjin Au Yeung",
+  "license": "ISC",
+  "dependencies": {
+    "stats.js": "0.17.0",
+    "three": "0.113.2"
+  },
+  "devDependencies": {
+    "@types/node": "13.7.0",
+    "@types/stats.js": "0.17.0",
+    "parcel": "1.12.4",
+    "typescript": "3.7.5"
+  }
+}
