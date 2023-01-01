@@ -18,7 +18,7 @@
   "devDependencies": {
     "@types/node": "13.7.0",
     "@types/stats.js": "0.17.0",
-    "parcel": "1.12.4",
+    "parcel": "2.8.2",
     "typescript": "3.7.5"
   }
 }
